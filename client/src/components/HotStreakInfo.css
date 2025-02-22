@@ -1,0 +1,15 @@
+.hot-streak-info {
+  padding: 20px;
+}
+
+.hot-streak-title {
+  text-align: center;
+  color: #e63946; /* Primary red */
+  font-family: "VTF Redzone Classic", sans-serif; /* Sports-style font */
+}
+
+.hot-streak-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px; /* Space between cards */
+}

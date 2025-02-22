@@ -1,0 +1,29 @@
+.card {
+  background-color: #2d2d2d; /* Dark Gray */
+  color: #ffffff; /* White */
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-name {
+  margin-top: 10px;
+  color: #e63946; /* Primary red */
+  font-family: "VTF Redzone Classic", sans-serif; /* Sports-style font */
+}
+
+.card-ratio {
+  margin-top: 5px;
+  color: #b0b0b0; /* Light Gray */
+}
+
+.card-ratio-value {
+  font-size: 18px;
+  font-weight: bold;
+}

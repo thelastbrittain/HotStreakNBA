@@ -1,0 +1,25 @@
+.navbar {
+  background-color: #e63946; /* Primary red */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  text-decoration: none;
+  color: #ffffff; /* White */
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "VTF Redzone Classic", sans-serif; /* Sports-style font */
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #ffffff; /* White */
+  font-size: 18px;
+  font-family: "Roboto", sans-serif; /* Clean sans-serif */
+}

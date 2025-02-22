@@ -1,0 +1,20 @@
+.hot-take {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #2d2d2d; /* Dark Gray */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hot-take-header {
+  color: #e63946; /* Primary red */
+  font-family: "VTF Redzone Classic", sans-serif; /* Sports-style font */
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.hot-take-text {
+  color: #ffffff; /* White */
+  font-family: "Roboto", sans-serif; /* Clean sans-serif */
+  font-size: 16px;
+}

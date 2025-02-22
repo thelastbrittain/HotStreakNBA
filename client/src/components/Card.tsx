@@ -1,4 +1,5 @@
 import React from "react";
+import "./Card.css";
 
 interface CardProps {
   name: string;
@@ -8,24 +9,11 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ name, ratio, imageUrl }) => {
   return (
-    <div
-      style={{
-        backgroundColor: "#333",
-        color: "white",
-        borderRadius: "10px",
-        padding: "15px",
-        textAlign: "center",
-        boxShadow: "0px 4px 6px rgba(0,0,0,0.3)",
-      }}
-    >
-      <img
-        src={imageUrl}
-        alt={`${name} player`}
-        style={{ width: "100%", borderRadius: "10px" }}
-      />
-      <h2 style={{ marginTop: "10px", color: "red" }}>{name}</h2>
-      <p>Last 10 Games Ratio:</p>
-      <p style={{ fontSize: "18px", fontWeight: "bold" }}>{ratio}</p>
+    <div className="card">
+      <img src={imageUrl} alt={`${name} player`} className="card-image" />
+      <h2 className="card-name">{name}</h2>
+      <p className="card-ratio">Last 10 Games Ratio:</p>
+      <p className="card-ratio-value">{ratio}</p>
     </div>
   );
 };

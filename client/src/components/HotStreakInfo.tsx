@@ -1,8 +1,9 @@
 import React from "react";
 import Card from "./Card";
 import HotTake from "./HotTake";
+import "./HotStreakInfo.css";
 
-// Define the teams array with their win/loss ratios
+// Teams data
 const teams = [
   { name: "Team A", ratio: "8-2", imageUrl: "https://via.placeholder.com/150" },
   { name: "Team B", ratio: "7-3", imageUrl: "https://via.placeholder.com/150" },
@@ -18,24 +19,16 @@ const calculateWinPercentage = (ratio: string): number => {
   return wins / (wins + losses);
 };
 
-// Sort the teams by win percentage in descending order
+// Sort teams by win percentage in descending order
 const sortedTeams = teams.sort(
   (a, b) => calculateWinPercentage(b.ratio) - calculateWinPercentage(a.ratio)
 );
 
 const HotStreakInfo: React.FC = () => {
   return (
-    <div style={{ padding: "20px" }}>
-      <h1 style={{ textAlign: "center", color: "red" }}>
-        Teams on a Hot Streak
-      </h1>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
-          gap: "20px",
-        }}
-      >
+    <div className="hot-streak-info">
+      <h1 className="hot-streak-title">Teams on a Hot Streak</h1>
+      <div className="hot-streak-grid">
         {sortedTeams.map((team, index) => (
           <Card
             key={index}

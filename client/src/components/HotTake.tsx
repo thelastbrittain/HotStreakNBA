@@ -1,15 +1,16 @@
-const HotTake = () => {
+import React from "react";
+import "./HotTake.css";
+
+const HotTake: React.FC = () => {
   const hotTakeText =
-    "The Oklahoma City Thunder are poised to dominate the Western Conference this season with their young core and stellar defense.";
+    "The Oklahoma City Thunder are emerging as a dark horse in the Western Conference, with their young core and elite defense poised to shake up the playoffs.";
 
   return (
-    <div
-      style={{
-        marginTop: "40px",
-        paddingTop: "40",
-      }}
-    >
-      ${hotTakeText}
+    <div className="hot-take">
+      <h2 className="hot-take-header">
+        Here is ChatGPT’s hot take regarding the NBA season:
+      </h2>
+      <p className="hot-take-text">{hotTakeText}</p>
     </div>
   );
 };
